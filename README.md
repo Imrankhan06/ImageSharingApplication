@@ -24,12 +24,12 @@ List of APIs:
 	Method: POST
 
 	payload: {
-		'username':<username>,
-		'password':<password>,
-		'email':<email>,
-		'fullname':<fullname>,
-		'profile_pic':<file>,
-		'bio':<text>
+		'username':{username},
+		'password':{password},
+		'email':{email},
+		'fullname':{fullname},
+		'profile_pic':{file},
+		'bio':{text}
 	}
 
 2. Login:
@@ -39,8 +39,8 @@ List of APIs:
 	Method: POST
 
 	payload: {
-		'username':<username>,
-		'password':<password>		
+		'username':{username},
+		'password':{password}		
 	}
 
 	You will get AccessToken.
@@ -52,72 +52,72 @@ List of APIs:
 	Method: POST
 
 	payload: {
-		'photo':<photo>,
-		'text':<text>,
-		'location': <location>	
+		'photo':{photo},
+		'text':{text},
+		'location':{location}
 	}
 
 	headers = {
-  		'Authorization': 'Bearer <Token>'
+  		'Authorization': {'Bearer Token'}
 	}
 
 4. Follow/Unfollow users:
 
-	Url: http://localhost:8000/api/user/<username>/follow/
+	Url: http://localhost:8000/api/user/{username}/follow/
 	
 	Method: GET
 
 	payload: {
-		'username':<username>,
-		'password':<password>		
+		'username':{username},
+		'password':{password}		
 	}
 
 	headers = {
-  		'Authorization': 'Bearer <Token>'
+  		'Authorization': {'Bearer <Token>'}
 	}
 
 5. Get Followers Count:
 
-	Url: http://localhost:8000/api/user/<username>/get-followers/
+	Url: http://localhost:8000/api/user/{username}/get-followers/
 	
 	Method: GET
 
 	payload: {
-		'username':<username>,
-		'password':<password>		
+		'username':{username},
+		'password':{password}
 	}
 
 	headers = {
-  		'Authorization': 'Bearer <Token>'
+  		'Authorization': {'Bearer <Token>'}
 	}
 
 6. Get Following Count:
 
-	Url: http://localhost:8000/api/user/<username>/get-following/
+	Url: http://localhost:8000/api/user/{username}/get-following/
 	
 	Method: GET
 
 	payload: {
-		'username':<username>,
-		'password':<password>		
+		'username':{username},
+		'password':{password}		
 	}
 
 	headers = {
-  		'Authorization': 'Bearer <Token>'
+  		'Authorization': {'Bearer <Token>'}
 	}
 
 7. Like a post:
 
-	Url: http://localhost:8000/api/post/like/<post_id>/
+	Url: http://localhost:8000/api/post/like/{post_id}/
 	Method: GET
 
 	payload: {
-		'username':<username>,
-		'password':<password>		
+		'username':{username},
+		'password':{password}		
 	}
 
 	headers = {
-  		'Authorization': 'Bearer <Token>'
+  		'Authorization': {'Bearer <Token>'}
 	}
 
 8. Get list of images of a current user:
@@ -127,12 +127,12 @@ List of APIs:
 	Method: GET
 
 	payload: {
-		'username':<username>,
-		'password':<password>		
+		'username':{username},
+		'password':{password}		
 	}
 
 	headers = {
-  		'Authorization': 'Bearer <Token>'
+  		'Authorization': {'Bearer <Token>'}
 	}
 
 9. Get list of posts of followed users:
@@ -142,27 +142,27 @@ List of APIs:
 	Method: GET
 
 	payload: {
-		'username':<username>,
-		'password':<password>		
+		'username':{username},
+		'password':{password}		
 	}
 
 	headers = {
-  		'Authorization': 'Bearer <Token>'
+  		'Authorization': {'Bearer <Token>'}
 	}
 
 10. Get list of all users:
 
-	Url: http://localhost:8000/api/user/<username>/allusers/
+	Url: http://localhost:8000/api/user/{username}/allusers/
 	
 	Method: GET
 
 	payload: {
-		'username':<username>,
-		'password':<password>		
+		'username':{username},
+		'password':{password}		
 	}
 
 	headers = {
-  		'Authorization': 'Bearer <Token>'
+  		'Authorization': {'Bearer <Token>'}
 	}
 
 
